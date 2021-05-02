@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/heading.css">
+    <script defer src="javascript/script.js"></script>
+</head>
+
+<body>
+    <h1 class="heading">Internetowy kantor wymiany walut</h1>
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Kalkulator Walut</legend>
+            <p class="form__paragraph form__paragraph--information">Pola oznaczone * są wymagane</p>
+            <p class="form__paragraph">
+                <label class="form__label">
+                    <span class="form__labelText">
+                        Podaj kwotę w PLN*:
+                    </span>
+                    <input class="form__field js-amountField" type="number" min="1" step="1" required
+                        placeholder="Podaj kwotę" autofocus>
+                </label>
+            </p>
+            <p class="form__paragraph">
+                <label class="form__label">
+                    <span class="form__labelText">
+                        Wymieniam na:
+                    </span>
+                    <select class="form__field js-currency" name="currency">
+                        <option value="EUR">Euro</option>
+                        <option value="USD">Dolar Amerykański</option>
+                        <option value="GBP">Funt Szterling</option>
+                    </select>
+                </label>
+            </p>
+            <button class="form__button">
+                Przelicz
+            </button>
+            <p class="form__paragraph">
+                Otrzymasz: <strong class="form__result js-result">N/A</strong>
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
